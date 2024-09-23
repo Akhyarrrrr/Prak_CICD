@@ -1,28 +1,99 @@
 <!DOCTYPE html>
-
-<head>
-    <title>Belajar CI/CD untuk Pemula</title>
+<html>
+  <head>
+    <title>Prak CI/CD</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            background-color: #ffffff;
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f5;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        background: linear-gradient(135deg, #56b7c2 0%, #98e9f2 100%);
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .container::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.2) 10%,
+          transparent 10%
+        );
+        background-size: 50px 50px;
+        animation: rotate 10s linear infinite;
+      }
+
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #fefefe;
+        font-family: "Source Code Pro", monospace;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: #56b7c2;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #56b7c2;
+        color: #ffffff;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
         }
 
-        h1 {
-            color: #C26356;
-            font-size: 30px;
-            font-family: Menlo, Monaco, fixed-width;
+        to {
+          transform: rotate(360deg);
         }
-
-        p {
-            color: rgb(0, 0, 0);
-            font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h1>Belajar CI/CD untuk Pemula</h1>
-    <p>Ini adalah contoh halaman HTML - Belajar CI/CD pemula</a></p>
-</body>
-
+  <body>
+    <div class="container">
+      <h1>Praktikum CI/CD</h1>
+      <p>Belajar CI/CD untuk pemula dengan desain keren!</p>
+      <button>Mulai Belajar</button>
+    </div>
+  </body>
 </html>
