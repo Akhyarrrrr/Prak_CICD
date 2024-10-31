@@ -8,6 +8,6 @@ COPY static ./static
 
 RUN go build -o /Prak_CICD
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD ["/Prak_CICD"]
